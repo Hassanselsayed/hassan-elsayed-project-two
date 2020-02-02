@@ -1,0 +1,57 @@
+// header layout
+header {
+    height: 100vh;
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5vh;
+        h1 {
+            position: relative;
+            left: -70px;
+        }
+        .main-img {
+            box-shadow: 20px 20px #ffffff ;
+            position: relative;
+            top: 30px;
+        }
+    }
+}
+// main layout
+// article one layout
+.article-one {
+    background-color: #F6F6F6;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 0;
+        p {
+            margin: 4vh 0;
+            text-align: center;
+        }
+        button {
+            margin-bottom: 7vh;
+        }
+    }
+}
+.section-one {
+    display: flex;
+    .article-two {
+        margin-left: 6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        p {
+            margin: 4vh 0;
+
+        }
+        button {
+            align-self: flex-start;
+        }
+    }
+    .article-two,
+    img {
+        width: calc(50% - 3vw);
+    }
+}

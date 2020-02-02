@@ -235,6 +235,96 @@ html {
   overflow: hidden;
 }
 
+header {
+  height: 100vh;
+}
+
+header .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+}
+
+header .heading h1 {
+  position: relative;
+  left: -70px;
+}
+
+header .heading .main-img {
+  -webkit-box-shadow: 20px 20px #ffffff;
+          box-shadow: 20px 20px #ffffff;
+  position: relative;
+  top: 30px;
+}
+
+.article-one {
+  background-color: #F6F6F6;
+}
+
+.article-one .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10vh 0;
+}
+
+.article-one .wrapper p {
+  margin: 4vh 0;
+  text-align: center;
+}
+
+.article-one .wrapper button {
+  margin-bottom: 7vh;
+}
+
+.section-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-one .article-two {
+  margin-left: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section-one .article-two p {
+  margin: 4vh 0;
+}
+
+.section-one .article-two button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.section-one .article-two,
+.section-one img {
+  width: calc(50% - 3vw);
+}
+
 h1,
 h2,
 h3,
@@ -293,6 +383,11 @@ h1 {
   line-height: 29px;
 }
 
+.top-nav a:hover,
+.top-nav a:focus {
+  color: #E4A436;
+}
+
 h1,
 h2,
 h3,
@@ -316,7 +411,7 @@ p {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 16rem;
 }
 
 h2 {
@@ -346,9 +441,32 @@ header {
 }
 
 button,
-input[type=sybmit] {
+input[type=submit] {
   background-color: #E4A436;
   border: none;
   cursor: pointer;
   padding: 5px 15px;
+}
+
+button:hover,
+input[type=submit]:hover,
+button:focus,
+input[type=submit]:focus {
+  background-color: #709B6B;
+}
+
+.top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav ul li {
+  margin: 0 20px;
 }
