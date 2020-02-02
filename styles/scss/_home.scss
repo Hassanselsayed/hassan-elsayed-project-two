@@ -36,22 +36,40 @@ header {
     }
 }
 .section-one {
-    display: flex;
-    .article-two {
-        margin-left: 6vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        p {
-            margin: 4vh 0;
+    position: relative;
+    .bgc {
+        background-color: #709B6B;
+        position: absolute;
+        width: calc(50% - 20px);
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        top: -20px;
 
-        }
-        button {
-            align-self: flex-start;
-        }
     }
-    .article-two,
-    img {
-        width: calc(50% - 3vw);
+    .wrapper {
+        display: flex;
+        position: relative;
+        top: -20px;
+        .img-cont1,
+        .article-two {
+            width: calc(50% - 40px);
+        }
+        .img-cont1 {
+            position: relative;
+            top: -20px;
+        }
+        .article-two {
+            margin-left: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            p {
+                margin: 40px 0;
+            }
+            button {
+                align-self: flex-start;
+            }
+        }
     }
 }

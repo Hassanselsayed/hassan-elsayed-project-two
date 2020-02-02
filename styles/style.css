@@ -292,13 +292,39 @@ header .heading .main-img {
 }
 
 .section-one {
+  position: relative;
+}
+
+.section-one .bgc {
+  background-color: #709B6B;
+  position: absolute;
+  width: calc(50% - 20px);
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  top: -20px;
+}
+
+.section-one .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: -20px;
 }
 
-.section-one .article-two {
-  margin-left: 6vw;
+.section-one .wrapper .img-cont1,
+.section-one .wrapper .article-two {
+  width: calc(50% - 40px);
+}
+
+.section-one .wrapper .img-cont1 {
+  position: relative;
+  top: -20px;
+}
+
+.section-one .wrapper .article-two {
+  margin-left: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,18 +337,13 @@ header .heading .main-img {
           justify-content: flex-end;
 }
 
-.section-one .article-two p {
-  margin: 4vh 0;
+.section-one .wrapper .article-two p {
+  margin: 40px 0;
 }
 
-.section-one .article-two button {
+.section-one .wrapper .article-two button {
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-
-.section-one .article-two,
-.section-one img {
-  width: calc(50% - 3vw);
 }
 
 h1,
