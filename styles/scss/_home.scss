@@ -1,11 +1,10 @@
 // header layout
 header {
-    height: 100vh;
     .heading {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 5vh;
+        height: 90vh;
         h1 {
             position: relative;
             left: -70px;
@@ -40,9 +39,7 @@ header {
     .bgc {
         background-color: #709B6B;
         position: absolute;
-        width: calc(50% - 20px);
-        left: 0;
-        right: 0;
+        width: calc(50% + 20px);
         bottom: 20px;
         top: -20px;
 
@@ -51,24 +48,132 @@ header {
         display: flex;
         position: relative;
         top: -20px;
-        .img-cont1,
-        .article-two {
-            width: calc(50% - 40px);
-        }
         .img-cont1 {
             position: relative;
             top: -20px;
+            width: 50%;
         }
         .article-two {
+            width: calc(50% - 80px);
             margin-left: 80px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             p {
-                margin: 40px 0;
+                margin: 20px 0;
             }
             button {
                 align-self: flex-start;
+            }
+        }
+    }
+}
+.section-two {
+    position: relative;
+    margin-top: 20px;
+    .bgc {
+        background-color: #345231;
+        position: absolute;
+        width: calc(50% + 20px);
+        bottom: -40px;
+        top: 40px;
+        left: calc(50% - 20px);
+    }
+    .wrapper {
+        display: flex;
+        position: relative;
+        top: -20px;
+        .img-cont2 {
+            position: relative;
+            bottom: -40px;
+            z-index: 10;
+        }
+        .article-three {
+            position: relative;
+            top: 40px;
+            width: calc(50% - 80px);
+            margin-right: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            p {
+                margin: 20px 0;
+                text-align: end;
+            }
+        }
+    }
+}
+.section-three {
+    background-color: #f6f6f6;
+    .wrapper {
+        display: flex;
+        padding: 10vh 0;
+        img {
+            width: 20%;
+            box-shadow: 20px 20px #709B6B ;
+
+        }
+        .article-four {
+            width: calc(80% - 80px);
+            margin-left: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            button {
+                align-self: flex-start;
+                position: relative;
+                bottom: -20px;
+            }
+        }
+    }
+}
+.img-cluster.wrapper {
+    margin: 60px auto;
+    display: flex;
+    li {
+        width: calc((100% - 20px) / 3);
+        margin-right: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    li:last-of-type {
+        margin-right: 0;
+    }
+}
+footer {
+    background-color: #f6f6f6;
+}
+.footer-main {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 50%;
+        display: flex;
+        a {
+            background-color: #E4A436;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            i {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        a:hover,
+        a:focus {
+            background-color: #709B6B;
+        }
+        .subcluster {
+            margin-left: 30px;
+            width: calc(100% - 30px - 64px);
+            margin-bottom: 60px;
+            h3 {
+                margin: 15px 0;
             }
         }
     }
