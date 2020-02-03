@@ -625,7 +625,9 @@ footer p {
   margin-bottom: 40px;
 }
 
-.blog-form {
+.contact-header {
+  background-image: url(../assets/blog-image-1.jpg);
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,61 +635,57 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.blog-form .inputs {
+.contact-header .top-nav {
+  background-color: #345231;
+}
+
+.contact-header h1 {
+  font-size: calc(4rem + 4vw);
+}
+
+.contact-main {
+  background-color: #F6F6F6;
+  padding: 80px 0;
+}
+
+.contact-main .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.blog-form .inputs input[type=text] {
-  margin-right: 20px;
+.contact-main .wrapper aside {
+  width: 30%;
 }
 
-.blog-form .inputs input[type=text],
-.blog-form .inputs input[type=email] {
-  width: calc(50% - 10px);
-  border: none;
-  padding: 20px 40px;
+.contact-main .wrapper aside address {
+  font-style: normal;
 }
 
-.blog-form textarea {
-  border: none;
+.contact-main .wrapper form {
+  width: calc(70% - 40px);
+  margin-left: 40px;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 25px;
+  color: #345231;
+}
+
+.contact-aside p:first-child {
   margin: 20px 0;
-  padding: 20px 40px;
-}
-
-.blog-form input[type=text]::-webkit-input-placeholder,
-.blog-form input[type=email]::-webkit-input-placeholder,
-.blog-form textarea::-webkit-input-placeholder {
-  color: #1F1F1F;
-  opacity: 1;
-  font-size: 1.5rem;
-}
-
-.blog-form input[type=text]:-ms-input-placeholder,
-.blog-form input[type=email]:-ms-input-placeholder,
-.blog-form textarea:-ms-input-placeholder {
-  color: #1F1F1F;
-  opacity: 1;
-  font-size: 1.5rem;
-}
-
-.blog-form input[type=text]::-ms-input-placeholder,
-.blog-form input[type=email]::-ms-input-placeholder,
-.blog-form textarea::-ms-input-placeholder {
-  color: #1F1F1F;
-  opacity: 1;
-  font-size: 1.5rem;
-}
-
-.blog-form input[type=text]::placeholder,
-.blog-form input[type=email]::placeholder,
-.blog-form textarea::placeholder {
-  color: #1F1F1F;
-  opacity: 1;
-  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h1,
@@ -815,6 +813,80 @@ input[type=submit]:hover,
 button:focus,
 input[type=submit]:focus {
   background-color: #709B6B;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .inputs input[type=text] {
+  margin-right: 20px;
+}
+
+form .inputs input[type=text],
+form .inputs input[type=email] {
+  width: calc(50% - 10px);
+  border: 0 solid #1F1F1F;
+  padding: 20px 40px;
+}
+
+form .inputs input[type=text]:focus,
+form .inputs input[type=email]:focus {
+  border: 3px solid #1F1F1F;
+}
+
+form textarea {
+  border: none;
+  margin: 20px 0;
+  padding: 20px 40px;
+}
+
+form textarea:focus {
+  border: 3px solid #1F1F1F;
+}
+
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+input[type=text]::-ms-input-placeholder,
+input[type=email]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+  font-size: 1.5rem;
 }
 
 .top-nav ul {
@@ -953,31 +1025,31 @@ input[type=submit]:focus {
   .main-post .blog-section-2 .blog-main-subcluster div {
     width: 100%;
   }
-  .blog-form .inputs input[type=text],
-  .blog-form .inputs input[type=email] {
+  form .inputs input[type=text],
+  form .inputs input[type=email] {
     padding: 10px;
   }
-  .blog-form textarea {
+  form textarea {
     padding: 10px;
   }
-  .blog-form input[type=text]::-webkit-input-placeholder,
-  .blog-form input[type=email]::-webkit-input-placeholder,
-  .blog-form textarea::-webkit-input-placeholder {
+  form input[type=text]::-webkit-input-placeholder,
+  form input[type=email]::-webkit-input-placeholder,
+  form textarea::-webkit-input-placeholder {
     font-size: 1rem;
   }
-  .blog-form input[type=text]:-ms-input-placeholder,
-  .blog-form input[type=email]:-ms-input-placeholder,
-  .blog-form textarea:-ms-input-placeholder {
+  form input[type=text]:-ms-input-placeholder,
+  form input[type=email]:-ms-input-placeholder,
+  form textarea:-ms-input-placeholder {
     font-size: 1rem;
   }
-  .blog-form input[type=text]::-ms-input-placeholder,
-  .blog-form input[type=email]::-ms-input-placeholder,
-  .blog-form textarea::-ms-input-placeholder {
+  form input[type=text]::-ms-input-placeholder,
+  form input[type=email]::-ms-input-placeholder,
+  form textarea::-ms-input-placeholder {
     font-size: 1rem;
   }
-  .blog-form input[type=text]::placeholder,
-  .blog-form input[type=email]::placeholder,
-  .blog-form textarea::placeholder {
+  form input[type=text]::placeholder,
+  form input[type=email]::placeholder,
+  form textarea::placeholder {
     font-size: 1rem;
   }
 }
@@ -1168,5 +1240,22 @@ input[type=submit]:focus {
   }
   .blog-main .wrapper .main-post {
     width: 100%;
+  }
+  .contact-main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-main .wrapper aside {
+    width: 80%;
+  }
+  .contact-main .wrapper .contact-form {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
   }
 }

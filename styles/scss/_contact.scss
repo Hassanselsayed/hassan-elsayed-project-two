@@ -1,0 +1,68 @@
+// header layout
+.contact-header {
+    background-image: url(../assets/blog-image-1.jpg);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .top-nav {
+        background-color: $dark-green;
+    }
+    h1 {
+        font-size: calc(4rem + 4vw);
+    }
+}
+.contact-main {
+    background-color: $white-shade;
+    padding: 80px 0;
+    .wrapper {
+        display: flex;
+        aside {
+            width: 30%;
+            address {
+                font-style: normal;
+            }
+        }
+        form {
+            width: calc(70% - 40px);
+            margin-left: 40px;
+        }
+    }
+}
+.social-links {
+    display: flex;
+    li {
+        margin-right: 25px;
+        color: $dark-green;
+    }
+}
+.contact-aside {
+    p:first-child {
+        margin: 20px 0;
+        font-weight: bold;
+    }
+}
+
+
+
+// .contact-form {
+//     display: flex;
+//     flex-direction: column;
+//     .inputs {
+//         display: flex;
+//         input[type=text] {
+//             margin-right: 20px;
+//         }
+//         input[type=text],
+//         input[type=email] {
+//             width: calc(50% - 10px);
+//             border: none;
+//             padding: 20px 40px;
+//         }
+//     }
+//     textarea {
+//         border: none;
+//         margin: 20px 0;
+//         padding: 20px 40px;
+//     }
+// }

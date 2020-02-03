@@ -2,6 +2,8 @@
 @import "variables";
 @import "home";
 @import "blog";
+@import "contact";
+
 
 // @mixin mq-tablet {
 //     @media (max-width: 1023px) {
@@ -131,6 +133,42 @@ button:focus,
 input[type=submit]:focus {
     background-color: $light-green;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    .inputs {
+        display: flex;
+        input[type=text] {
+            margin-right: 20px;
+        }
+        input[type=text],
+        input[type=email] {
+            width: calc(50% - 10px);
+            border: 0 solid $black;
+            padding: 20px 40px;
+        }
+        input[type=text]:focus,
+        input[type=email]:focus {
+            border: 3px solid $black;
+        } 
+    }
+    textarea {
+        border: none;
+        margin: 20px 0;
+        padding: 20px 40px;
+    }
+    textarea:focus {
+        border: 3px solid $black;
+    }
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+    color: $black;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
 // general cross-page layouts
 .top-nav ul {
     display: flex;
@@ -290,7 +328,7 @@ input[type=submit]:focus {
             }
         }
     }
-    .blog-form {
+    form {
         .inputs {
             input[type=text],
             input[type=email] {
@@ -464,5 +502,18 @@ input[type=submit]:focus {
             }
         }
     }
-    
+    .contact-main {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            aside {
+                width: 80%;
+            }
+            .contact-form {
+                margin-left: 0;
+                margin-top: 20px;
+                width: 80%;
+            }
+        }
+    }
 }
