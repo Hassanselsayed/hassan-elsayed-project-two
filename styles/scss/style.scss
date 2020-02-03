@@ -4,26 +4,6 @@
 @import "blog";
 @import "contact";
 
-
-// @mixin mq-tablet {
-//     @media (max-width: 1023px) {
-//         @content;
-//     }
-// }
-
-
-// body {
-//     background-color: gold;
-//     @include mq-tablet {
-//         background-color: blue;
-//     }
-    
-//     h1 {
-//         color: $secondaryColor;
-//     }
-// }
-
-
 // stripping default styles
 h1,
 h2,
@@ -180,7 +160,8 @@ textarea::placeholder {
     }
 }
 
-// general media queries
+
+// media queries
 @media (max-width: 1080px) {
     button,
     input[type=submit],
@@ -328,6 +309,7 @@ textarea::placeholder {
             }
         }
     }
+
     form {
         .inputs {
             input[type=text],
@@ -345,6 +327,7 @@ textarea::placeholder {
         }    
     }
 }
+
 @media (max-width: 500px) {
     .top-nav ul {
         flex-wrap: wrap;
