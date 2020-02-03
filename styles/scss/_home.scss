@@ -10,7 +10,7 @@ header {
             left: -70px;
         }
         .main-img {
-            box-shadow: 20px 20px #ffffff ;
+            box-shadow: 20px 20px $white;
             position: relative;
             top: 30px;
         }
@@ -19,7 +19,7 @@ header {
 // main layout
 // article one layout
 .article-one {
-    background-color: #F6F6F6;
+    background-color: $white-shade;
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -37,12 +37,11 @@ header {
 .section-one {
     position: relative;
     .bgc {
-        background-color: #709B6B;
+        background-color: $light-green;
         position: absolute;
         width: calc(50% + 20px);
         bottom: 20px;
         top: -20px;
-
     }
     .wrapper {
         display: flex;
@@ -59,8 +58,11 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            h3 {
+                margin-top: 40px;
+            }
             p {
-                margin: 20px 0;
+                margin: 30px 0;
             }
             button {
                 align-self: flex-start;
@@ -72,7 +74,7 @@ header {
     position: relative;
     margin-top: 20px;
     .bgc {
-        background-color: #345231;
+        background-color: $dark-green;
         position: absolute;
         width: calc(50% + 20px);
         bottom: -40px;
@@ -87,6 +89,7 @@ header {
             position: relative;
             bottom: -40px;
             z-index: 10;
+            width: 50%;
         }
         .article-three {
             position: relative;
@@ -98,21 +101,20 @@ header {
             justify-content: flex-start;
             align-items: flex-end;
             p {
-                margin: 20px 0;
+                margin: 30px 0;
                 text-align: end;
             }
         }
     }
 }
 .section-three {
-    background-color: #f6f6f6;
+    background-color: $white-shade;
     .wrapper {
         display: flex;
         padding: 10vh 0;
         img {
             width: 20%;
-            box-shadow: 20px 20px #709B6B ;
-
+            box-shadow: 20px 20px $light-green ;
         }
         .article-four {
             width: calc(80% - 80px);
@@ -128,6 +130,7 @@ header {
         }
     }
 }
+
 .img-cluster.wrapper {
     margin: 60px auto;
     display: flex;
@@ -143,7 +146,10 @@ header {
     }
 }
 footer {
-    background-color: #f6f6f6;
+    background-color: $white-shade;
+    p {
+        padding: 10px 0;
+    }
 }
 .footer-main {
     padding: 40px 0;
@@ -153,7 +159,7 @@ footer {
         width: 50%;
         display: flex;
         a {
-            background-color: #E4A436;
+            background-color: $accent;
             border-radius: 50%;
             width: 64px;
             height: 64px;
@@ -166,7 +172,7 @@ footer {
         }
         a:hover,
         a:focus {
-            background-color: #709B6B;
+            background-color: $light-green;
         }
         .subcluster {
             margin-left: 30px;
