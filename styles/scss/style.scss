@@ -341,8 +341,8 @@ textarea::placeholder {
             flex-direction: column;
             justify-content: center;
             height: 70vh;
-            img:first-child {
-                rotate: 63deg;
+            .circle-text {
+                display: none;
             }
             h1 {
                 left: 0;
@@ -351,7 +351,7 @@ textarea::placeholder {
             .main-img {
                 box-shadow: none;
                 top: 0;
-
+                width: 50%;
             }
         }
     }
@@ -468,6 +468,10 @@ textarea::placeholder {
                 }
             }
         }
+    }
+    .blog-header,
+    .contact-header {
+        height: 35vh;
     }
     .blog-main {
         .wrapper {

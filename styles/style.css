@@ -246,6 +246,7 @@ header .heading {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
+  max-width: 100%;
 }
 
 header .heading h1 {
@@ -1072,8 +1073,8 @@ textarea::placeholder {
             justify-content: center;
     height: 70vh;
   }
-  header .heading img:first-child {
-    rotate: 63deg;
+  header .heading .circle-text {
+    display: none;
   }
   header .heading h1 {
     left: 0;
@@ -1083,6 +1084,7 @@ textarea::placeholder {
     -webkit-box-shadow: none;
             box-shadow: none;
     top: 0;
+    width: 50%;
   }
   .article-one .wrapper {
     padding: 5vh 0;
@@ -1221,6 +1223,10 @@ textarea::placeholder {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .blog-header,
+  .contact-header {
+    height: 35vh;
   }
   .blog-main .wrapper {
     -webkit-box-orient: vertical;
